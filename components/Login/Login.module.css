@@ -1,0 +1,44 @@
+.login_page_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('https://omdia.tech.informa.com/-/media/tech/omdia/images/service-areas/cybersecurity_1134x638.jpg?rev=7ce0c3a7d477444482bd3be0f634a9c5&h=638&w=1124&la=en&hash=76D95B0B9D0B0A22A700D8957DBDDEEB');
+    height: 100vh;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_form_container {
+    margin-right: auto;
+    margin-left: 5vw;
+    padding-top: 32vh;
+    padding-bottom: 5vh;
+    width: 25%;
+}
+
+.login_form_container h1 {
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.login_form_input label{
+    font-size: medium !important;
+    font-weight: 800 !important;
+    color: white !important;
+    margin-bottom: 1rem !important;
+}
+
+.login_form_register {
+    font-size: small !important;
+    font-weight: 800 !important;
+    color: white !important;
+    margin-top: 1rem !important;
+}
+
+.login_form_register strong a {
+    font-size: small !important;
+    font-weight: 500 !important;
+    color:hotpink !important;
+    margin-top: 1rem !important;
+}

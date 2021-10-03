@@ -1,0 +1,14 @@
+.likeButton {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 10rem !important;
+}
+
+.likeButton:hover {
+    background-color: lightcyan;
+}
+
+.likesCount {
+    font-size: 1.2rem;
+    color: teal
+}

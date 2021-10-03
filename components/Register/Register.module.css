@@ -1,0 +1,44 @@
+.register_page_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 100vh;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register_form_container {
+    margin-right: auto;
+    margin-left: 5vw;
+    padding-top: 18vh;
+    padding-bottom: 5vh;
+    width: 25%;
+}
+
+.register_form_container h1 {
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.register_form_input label{
+    font-size: medium !important;
+    font-weight: 800 !important;
+    color: white !important;
+    margin-bottom: 1rem !important;
+}
+
+.register_form_login {
+    font-size: small !important;
+    font-weight: 800 !important;
+    color: white !important;
+    margin-top: 1rem !important;
+}
+
+.register_form_login strong a {
+    font-size: small !important;
+    font-weight: 500 !important;
+    color:hotpink !important;
+    margin-top: 1rem !important;
+}

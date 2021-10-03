@@ -8,6 +8,16 @@
   height: 100vh;
 }
 
+/* .baseLayout {
+  background-image: url('https://images.pexels.com/photos/5827389/pexels-photo-5827389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  height: auto;
+  background-attachment: scroll;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 .main {
   padding: 5rem 0;
   flex: 1;
