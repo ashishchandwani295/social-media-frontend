@@ -1,9 +1,10 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from '@apollo/client/link/context';
 import nookies from 'nookies';
+const NEXT_PUBLIC_GRAPHQL_SERVER = process.env.NEXT_PUBLIC_GRAPHQL_SERVER;
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:8000',
+    uri: NEXT_PUBLIC_GRAPHQL_SERVER,
   });
 
 
