@@ -1,5 +1,6 @@
 import { useMutation } from "@apollo/client"
 import { useRouter } from "next/dist/client/router"
+import Link from "next/link"
 import { FormEvent, useContext, useState } from "react"
 import { Button, Form, Message } from "semantic-ui-react"
 import { Context } from "../../context/contextProvider"
@@ -56,6 +57,7 @@ const Login: React.FC = () => {
                         label="Username"
                         placeholder='Please enter username'
                         value={values.username}
+                        // @ts-ignore
                         error={errors.username}
                         onChange={handleChange}
                         className={styles.login_form_input}
@@ -67,6 +69,7 @@ const Login: React.FC = () => {
                         name="password"
                         placeholder='Please enter your password' 
                         value={values.password}
+                        // @ts-ignore
                         error={errors.password}
                         onChange={handleChange}
                         className={styles.login_form_input}
@@ -75,16 +78,20 @@ const Login: React.FC = () => {
                         Login
                     </Button>
                     <div className={styles.login_form_register}>
-                        Don't have an account?<strong><a href="/register"> Sign up here!</a></strong>
+                        Do not have an account?<strong><Link href="/register"> Sign up here!</Link></strong>
                     </div>
                     <Message
                         style={{ display: errors ? "block" : "none" }}
                         error
+                        // @ts-ignore
                         list= {errors.general ? (
+                            // @ts-ignore
                             [ errors.general ]
                             ) : (
                             [
+                            // @ts-ignore
                             errors.username,
+                            // @ts-ignore
                             errors.password
                             ])}
                     />

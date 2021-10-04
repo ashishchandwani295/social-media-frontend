@@ -6,6 +6,7 @@ export const checkAuth = (context: any) => {
 
     if(cookies.authToken) {
         const decodeToken = jwtDecode(cookies.authToken);
+        // @ts-ignore
         if (decodeToken.exp * 1000 < Date.now()) {
             return null
         } else {
@@ -20,6 +21,7 @@ export const verifyAuth = () => {
     if(process.browser) {
         if(localStorage.getItem("authToken")) {
             const token = localStorage.getItem("authToken");
+            // @ts-ignore
             const decodedToken = jwtDecode(token);
             return decodedToken
         }

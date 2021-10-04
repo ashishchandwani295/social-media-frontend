@@ -9,7 +9,7 @@ export const makeQuery: any =  async(query: DocumentNode, variables={}) => {
         
         return data;
 
-    } catch(err) {
+    } catch(err:any) {
         throw new Error(err)
     }
     

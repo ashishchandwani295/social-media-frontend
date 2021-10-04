@@ -10,6 +10,7 @@ import { verifyAuth } from '../utils/auth';
 import { NEW_POST_ACTIONS } from './actions/post';
 
 const initialState: IInitialState= {
+    // @ts-ignore
     userDetails: verifyAuth() ? verifyAuth() : undefined,
     login: (userDetails: IUser) => {},
     logout: () => {},
@@ -41,6 +42,7 @@ export const ContextProvider = ({ children }: any) => {
         }
         
         if(localStorage.getItem("authToken")) {
+            // @ts-ignore
             const token: string = localStorage.getItem("authToken");
             const decodedToken: AuthToken = jwtdecode(token);
 

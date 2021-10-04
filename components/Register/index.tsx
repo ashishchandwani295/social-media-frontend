@@ -1,5 +1,6 @@
 import { useMutation } from "@apollo/client"
 import { useRouter } from "next/dist/client/router"
+import Link from 'next/link'
 import { FormEvent, useContext, useState } from "react"
 import { Button, Form } from "semantic-ui-react"
 import { Context } from "../../context/contextProvider"
@@ -57,6 +58,7 @@ const Register: React.FC = () => {
                         label="Username"
                         placeholder='Please enter username'
                         value={values.username}
+                        // @ts-ignore
                         error={errors === '' ? false : (errors.username ? errors.username : errors) }
                         onChange={handleChange}
                         className={styles.register_form_input}
@@ -68,6 +70,7 @@ const Register: React.FC = () => {
                         name="email"
                         placeholder='Please enter email'
                         value={values.email}
+                        // @ts-ignore
                         error={errors === '' ? false : errors.email}
                         onChange={handleChange}
                         className={styles.register_form_input}
@@ -79,6 +82,7 @@ const Register: React.FC = () => {
                         name="password"
                         placeholder='Please enter your password' 
                         value={values.password}
+                        // @ts-ignore
                         error={errors === '' ? false : errors.password}
                         onChange={handleChange}
                         className={styles.register_form_input}
@@ -95,7 +99,7 @@ const Register: React.FC = () => {
                     />
                     <Button type="submit" color="purple" className={loading ? "loading" : ""}>Register</Button>
                     <div className={styles.register_form_login}>
-                        Already have an account?<strong><a href="/login"> Sign in here!</a></strong>
+                        Already have an account?<strong><Link href="/login"> Sign in here!</Link></strong>
                     </div>
                 </Form.Field>
             </Form>

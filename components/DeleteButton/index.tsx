@@ -30,9 +30,11 @@ const DeleteButton: React.FC<PostId> = ({ postId, commentId, handleCommentDeleti
 
             if(!commentId) {
                 const data = await makeQuery(GET_POSTS)
+                // @ts-ignore
                 handlePostDeletion(data.data.getPosts)
                 router.push('/')
             } else {
+                // @ts-ignore
                 handleCommentDeletion(result.data.deleteComment)
             }
             setConfirmDelete(false)
